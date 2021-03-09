@@ -34,5 +34,5 @@ jobs:
         run: npm intall --global surge
      
       - name: Deploying using surge
-        run: surge ./build naeemahmed1.surge.sh --token ${{ secrets.STOKEN_P002}}
+        run: surge ./build naeemahmed1.surge.sh --token ${{ secrets.STOKEN_P002 }}
           
