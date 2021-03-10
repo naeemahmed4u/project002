@@ -28,9 +28,14 @@ jobs:
         uses: actions/setup-node@v2-beta
         with:
           node-version: 12
+
+      - name: GitHub actions for yarn
+        uses: Borales/actions-yarn@v2.1.0
+        with:
+          cmd: install
         
       - name: Creating build
-        run: npm run-script build
+        run: yarn build
 
       # Runs a set of commands using the runners shell
       - name: installing surge
