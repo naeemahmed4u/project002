@@ -32,14 +32,15 @@ jobs:
       - name: GitHub actions for yarn
         uses: Borales/actions-yarn@v2.1.0
         with:
-          cmd: install
+          # yarn command
+          cmd: install  # npm install/yarn install
         
       - name: Creating build
         run: yarn build
 
       # Runs a set of commands using the runners shell
       - name: installing surge
-        run: npm install --global surge
+        run: npm install -g surge
      
       - name: Deploying using surge
         run: surge ./build naeemahmed1.surge.sh --token ${{ secrets.STOKEN_P002 }}
