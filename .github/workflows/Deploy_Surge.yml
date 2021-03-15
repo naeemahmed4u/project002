@@ -27,7 +27,7 @@ jobs:
       - name: Installing Node
         uses: actions/setup-node@v2-beta
         with:
-          node-version: 12
+          node-version: 15.11.0
 
       - name: GitHub actions for yarn
         uses: Borales/actions-yarn@v2.1.0
