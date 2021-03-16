@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React (Naeem Ahmed)
+          Learn React (Naeem Ahmed can deploy auto)
         </a>
       </header>
     </div>
